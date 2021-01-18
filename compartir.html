@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>NutSpace - Compartir</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="estilos.css" />
+        <link rel="stylesheet" href="font.css" />
+        <script src="js/script.js" defer></script> 
+        <script src="js/script1.js" defer></script> 
+        <script src="js/compartir.js" defer></script> 
+        <script src="js/jQuery.js" ></script> 
+        
+    </head>
+    <body>
+        <header> 
+
+            <nav>
+                <ul>
+                    <li><a href="#"><span></span></a>-</li>
+                    <li><a href="index.html"><span class="inic"></span>Inicio</a></li>
+                    <li><a href="imagenDia.html" ><span class="imdi"></span>Imagen del día</a></li>
+                    <li><a href="proyectos.html" ><span class="proy"></span>Proyectos</a></li>
+                    <li><a href="contacto.html"><span class="cont"></span>Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu_bar">
+                <a href="#" class="bt-menu"><span class="icon-list2"></span><span class="icon-menu"></span>
+                <img id="logo" src="img/logo1.png" ></a>   
+            </div>
+
+        </header>
+            <br/>
+            <br/>
+            </br></br></br>
+        <main>
+            
+            <div class="flex-container"> 
+                <div class="Principal2">
+                    <main>
+            
+                        <div class="flex-container"> 
+                            <div class="Principal2">
+                                <main>
+                                    <h1>COMPARTIR CON UN AMIGO</h1>
+                                    <form id="formulario" action="javascript:sendMail()">
+                                        
+                                        <div id="datosEnviar"></div>
+                                        
+                                        <p>Destinatario <input type="text" id="emailD" placeholder="Ingresar correo destino" name="emailDestinatario"></p>
+                                        <div id ="destinatarioObligarotio"></div>
+                                        <p>Mensaje <br><textarea id= "mensaje" name="mensaje"></textarea></p>
+                                            
+                                        <input class="comp" type="submit" value="Enviar" onclick="enviarRespuestas()"/>
+                                        <input class="comp" type="button" value="Cancelar" onclick= "quiereCancelar()"/> 
+                                            
+                                        <br/>
+                                        <br/>
+                                        <div id="contenido2"></div>
+                                    </form>
+                                </main>
+                            </div> 
+                        </div>
+                    
+                    </main>
+                </div> 
+            </div>
+        
+        </main>
+        
+    </body>
+
+</html>
